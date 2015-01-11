@@ -1,0 +1,222 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+#overlay-container {
+    z-index:99999;
+}
+body {
+    background:url(/sites/all/themes/consilium/images/bg.jpg) top center repeat;
+    color:#303030;
+    font-size:16px;
+    font-family: $opensans;
+    font-weight:300;
+
+     h2 {
+	font-size:35px;
+        font-family: $oswald;
+	color:#ca541f;
+	text-transform:uppercase;
+    }
+
+    #block-system-main-menu {
+	display:none;
+    }
+    #block-search-form {
+	width: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+
+	.form-item-search-block-form {
+		float:left;
+		input {
+			width: 160px;
+		}
+	}
+	.form-actions {
+		float: right;
+		margin-top: 14px;
+	}
+		
+	button {
+		border: 0;
+		text-indent: -9999px;	
+    	background:url(/sites/all/themes/consilium/images/search.png) top center no-repeat;
+	}
+	button:hover {
+		background-color: rgba(255,255,255,0.5) !important;
+		background: url(/sites/all/themes/consilium/images/search.png) top center no-repeat;
+	}
+    }
+    ul.menu {
+	text-align:right;
+
+	a {
+	    text-transform:uppercase;
+	    padding:10px 26px;
+	    font-size:19px;
+	}
+	a:hover {
+	    background-color:transparent;
+	}
+    }	
+    #section-header {
+	background:transparent;
+    }
+
+    #section-banner {
+	.md-arrow > div {
+	    -webkit-box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.81);
+	    -moz-box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.81);
+	    box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.81);
+	    opacity:.5;
+	}
+	.md-arrow-left {
+	    border-radius: 0 5px 5px 0px;
+	}
+	.md-arrow-right {
+	    border-radius: 5px 0px 0px 5px;
+	}
+    }
+    #section-bottom {
+	background:transparent !important;
+
+	.block {
+	    background-color:#c5c3c0;
+	}
+	.block:hover {
+	    background:#ca541f;
+	}
+
+	.region {
+	    display:block;
+	    text-align:center;
+	    height:246px;
+
+	    p,
+	    div {
+		height:100%;
+		width:100%;
+	    }
+
+	    a {
+		height:100%;
+		width:100%;
+		display:block;
+		color:#727272;
+		text-transform:uppercase;
+		padding: 165px 20px 0px;
+	    }
+	    a:hover {
+		color:#fff;
+	    }
+	}
+	.region-bottom-first {
+	    a {
+		background:url(/sites/all/themes/consilium/images/total-grease-management.png) 50% 40% no-repeat;
+	    }
+	    a:hover {
+		background:url(/sites/all/themes/consilium/images/total-grease-management-hover.png) 50% 40% no-repeat;
+	    }
+	}
+	.region-bottom-second {
+	    a {
+		background:url(/sites/all/themes/consilium/images/used-cooking-oil.png) 50% 37% no-repeat;
+	    }
+	    a:hover {
+		background:url(/sites/all/themes/consilium/images/used-cooking-oil-hover.png) 50% 37% no-repeat;
+	    }
+	}
+	.region-bottom-third p {
+	    padding:0;
+
+	    a {
+		background:url(/sites/all/themes/consilium/images/grease-trap.png) 50% 45% no-repeat;
+	    }
+	    a:hover {
+		background:url(/sites/all/themes/consilium/images/grease-trap-hover.png) 50% 45% no-repeat;
+	    }
+	}
+	.region-bottom-fourth {
+	    a {
+		background:url(/sites/all/themes/consilium/images/power-washing.png) 50% 40% no-repeat;
+	    }
+	    a:hover {
+		background:url(/sites/all/themes/consilium/images/power-washing-hover.png) 50% 40% no-repeat;
+	    }
+	}
+    }
+    #section-users {
+	font-size:20px;
+	font-family:$oswald;	
+	text-transform:uppercase;
+	color:#ca541f;
+
+	.icon {
+	    background-color:#ca541f;
+	    border:5px solid #ca541f;
+	    border-radius:50%;
+	    float: left;
+	    height:65px;
+	    width:65px;
+	    margin: 5px;
+
+	    img {
+		margin: 0 auto;
+		display: block;
+		margin-top: 10px;
+	    }
+	}
+	.icon:hover {
+	    border:5px solid yellow;
+	    border-radius:50%;
+	}
+    }
+    #section-footer {
+	font-family: Arial, sans-serif;
+	font-size:14px;
+    	background:url(/sites/all/themes/consilium//images/bg-footer.png) top center repeat;
+	height:143px;
+
+	ul {
+	    margin: 0;
+	    padding: 0;
+	    list-style:none;
+
+	    li:first-child {
+		padding-left:0;
+	    }
+	    li:last-child {
+		border-right:0;
+	    }
+	    li {
+	    	float:left;
+		padding: 0 0 0 8px;
+		a {
+		    color:#fff;
+		    border-right: 1px solid;
+		    padding: 0 8px 0 0;
+		    //color:#fff;
+		    //color:#fff;
+		}
+	    }
+	}
+    }
+}
+/******
+* Forms
+******/
+form {
+	input,
+	textarea {
+		background-color:#9d9b99 !important;
+		border:0 !important;
+		color:#fff !important;
+		resize:none !important;
+		font-family:$opensans;
+		font-size:12px;
+	}
+	input {
+		height:23px !important;
+	}
+}
